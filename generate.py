@@ -201,7 +201,7 @@ def footer(depth):
   <div class="container footer-grid">
     <div>
       <a class="logo" href="{a}index.html"><span class="logo-mark">A</span><span class="logo-word">AETTRAM</span></a>
-      <p style="margin-top:16px">We design and manufacture in our own facility — CNC, sheet metal, and automation under one roof.</p>
+      <p style="margin-top:16px">From concept to production, we build practical solutions under one roof.</p>
     </div>
     <div>
       <h4>Services</h4>
