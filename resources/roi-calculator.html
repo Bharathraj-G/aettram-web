@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automation ROI Calculator — Aettram</title>
+<meta name="description" content="Estimate the financial impact of automation using your own production, labour, quality, downtime and investment assumptions.">
+<link rel="canonical" href="https://aettram.ind.in/resources/roi-calculator.html">
+<meta property="og:title" content="Automation ROI Calculator — Aettram">
+<meta property="og:description" content="Estimate the financial impact of automation using your own production, labour, quality, downtime and investment assumptions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aettram.ind.in/resources/roi-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+<link rel="stylesheet" href="https://unpkg.com/splitting@1.0.6/dist/splitting.css">
+
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="../assets/css/roi-calculator.css?v=3">
+</head>
+<body class="roi-page">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="logo" href="../index.html" aria-label="Aettram home">
+      <img src="../assets/images/aettram-logo.svg" alt="Aettram" class="logo-svg">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-link" href="../about.html">About</a>
+      <a class="nav-link" href="../services.html">Solutions</a>
+      <div class="dropdown">
+        <a class="nav-link" href="../manufacturing.html">Manufacturing <svg class="nav-caret" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2.2 4.2L6 8l3.8-3.8" fill="none" stroke="#D8D6D2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="dropdown-menu align-end" role="menu"><a href="../services/cnc-turning.html">CNC Turning</a><a href="../services/cnc-milling.html">CNC Milling / VMC</a><a href="../services/dro-machining.html">DRO Machining</a><a href="../services/conventional-lathe.html">Conventional Lathe Job Work</a><a href="../services/drilling-tapping-boring.html">Drilling / Tapping / Boring</a><a href="../services/jigs-fixtures.html">Jigs &amp; Fixtures</a><a href="../services/prototype-components.html">Prototype Components</a><a href="../services/small-batch-production.html">Small Batch Production</a><a href="../services/repeat-production.html">Repeat Production</a><a href="../services/machine-components.html">Machine Components</a><a href="../services/machine-frames.html">Machine Frames</a><a href="../services/fabricated-components.html">Fabricated Components</a><a href="../services/sub-assemblies.html">Sub-Assemblies</a><a href="../services/machine-assembly.html">Machine Assembly</a><a href="../services/fixture-structure-fabrication.html">Fixture &amp; Structure Fabrication</a></div>
+      </div>
+      <div class="dropdown">
+        <a class="nav-link" href="../industries.html">Industries <svg class="nav-caret" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2.2 4.2L6 8l3.8-3.8" fill="none" stroke="#D8D6D2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="dropdown-menu align-end" role="menu"><a href="../industries/automotive.html">Automotive &amp; Auto Components</a><a href="../industries/aerospace.html">Aerospace &amp; Defence</a><a href="../industries/medical-devices.html">Pharma &amp; Medical</a><a href="../industries/electronics.html">Electrical &amp; Electronics</a><a href="../industries/industrial-machinery.html">Industrial Machinery</a><a href="../industries/pumps-motors.html">Pumps &amp; Motors</a><a href="../industries/food-beverage.html">Food &amp; Beverage</a><a href="../industries/plastics-rubber.html">Plastics &amp; Rubber</a><a href="../industries/agriculture-off-highway.html">Agriculture &amp; Off-Highway</a><a href="../industries/consumer-products.html">Consumer Products</a></div>
+      </div>
+      <a class="nav-link is-active" href="../resources.html">Resources</a>
+      <a class="nav-link" href="../contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-panel" aria-label="Mobile">
+  <a href="../about.html">About</a>
+  <a href="../services.html">Solutions</a>
+  <a href="../manufacturing.html">Manufacturing</a>
+  <a href="../industries.html">Industries</a>
+  <a href="../resources.html">Resources</a>
+  <a href="../contact.html">Contact</a>
+</nav>
+
+<main id="main">
+
+<!-- ====== Hero ====== -->
+<section class="roi-hero grain">
+  <div class="container">
+    <p class="eyebrow">Automation Investment Tool</p>
+    <h1>Calculate Your Automation ROI</h1>
+    <p class="lead">Estimate the financial impact of automation using your own production, labour, quality, downtime and investment assumptions.</p>
+  </div>
+</section>
+
+<!-- ====== Wizard ====== -->
+<div class="roi-wizard">
+
+  <!-- ── STEP 1 — Contact ── -->
+  <div class="roi-step" id="roi-step-1">
+    <div class="roi-card">
+      <div class="roi-step-header">
+        <p class="roi-step-label">Step 1 of 3</p>
+        <div class="roi-progress"><div class="roi-progress__fill" style="width:33%"></div></div>
+      </div>
+      <h2 class="roi-form-title">Before we calculate, tell us about you</h2>
+      <p class="roi-form-desc">Your details help us understand who is evaluating automation. They can later be connected to your CRM or enquiry system.</p>
+
+      <div class="roi-form-grid">
+        <div class="roi-field">
+          <label class="roi-label" for="roi-name">Name <span class="required">*</span></label>
+          <input class="roi-input" type="text" id="roi-name" placeholder="" required>
+          <span class="roi-error-msg">Please enter your name</span>
+        </div>
+        <div class="roi-field">
+          <label class="roi-label" for="roi-company">Company <span class="required">*</span></label>
+          <input class="roi-input" type="text" id="roi-company" placeholder="" required>
+          <span class="roi-error-msg">Please enter your company</span>
+        </div>
+        <div class="roi-field">
+          <label class="roi-label" for="roi-email">Business email <span class="required">*</span></label>
+          <input class="roi-input" type="email" id="roi-email" placeholder="" required>
+          <span class="roi-error-msg">Please enter a valid email</span>
+        </div>
+        <div class="roi-field">
+          <label class="roi-label" for="roi-phone">Phone</label>
+          <input class="roi-input" type="tel" id="roi-phone" placeholder="">
+        </div>
+        <div class="roi-field">
+          <label class="roi-label" for="roi-industry">Industry</label>
+          <select class="roi-select" id="roi-industry">
+            <option value="">Select industry</option>
+            <option value="aerospace">Aerospace</option>
+            <option value="automotive">Automotive</option>
+            <option value="medical">Medical Devices</option>
+            <option value="industrial">Industrial Machinery</option>
+            <option value="electronics">Electronics</option>
+            <option value="energy">Energy</option>
+            <option value="robotics">Robotics</option>
+            <option value="fmcg">FMCG / Consumer Goods</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="roi-actions">
+        <button class="roi-btn roi-btn--primary" id="roi-continue">Continue →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 2 — Analysis Picker ── -->
+  <div class="roi-step" id="roi-step-2">
+    <div class="roi-card">
+      <div class="roi-step-header">
+        <p class="roi-step-label">Step 2 of 3</p>
+        <div class="roi-progress"><div class="roi-progress__fill" style="width:66%"></div></div>
+      </div>
+      <h2 class="roi-form-title" style="text-align:center">Choose your analysis</h2>
+      <p class="roi-choose-subtitle">Start with a quick estimate or build a complete investment case.</p>
+
+      <div class="roi-analysis-grid">
+        <div class="roi-analysis-card" id="roi-pick-quick">
+          <span class="roi-analysis-icon">⚡</span>
+          <h3>Quick ROI</h3>
+          <p>Get an estimated annual saving and payback using a small number of inputs.</p>
+          <span class="roi-analysis-badge">About 60 seconds</span>
+        </div>
+        <div class="roi-analysis-card" id="roi-pick-investment">
+          <span class="roi-analysis-icon">📊</span>
+          <h3>Investment Analysis</h3>
+          <p>Include inflation, financing, operating costs, NPV, IRR and multi-year cash flow.</p>
+          <span class="roi-analysis-badge">Full financial view</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 3a — Quick ROI ── -->
+  <div class="roi-step" id="roi-step-3a">
+    <div class="roi-card roi-card--split">
+      <div class="roi-card__left">
+        <p class="roi-step-label roi-step-label--left">Quick ROI</p>
+        <div class="roi-progress roi-progress--left"><div class="roi-progress__fill" style="width:100%"></div></div>
+        <h2 class="roi-form-title">Quick Automation ROI</h2>
+        <p class="roi-form-desc">Use your best available estimates. You can refine the assumptions later.</p>
+
+        <!-- Current Process -->
+        <h3 class="roi-section-header">Current Process</h3>
+        <div class="roi-form-grid">
+          <div class="roi-field">
+            <label class="roi-label" for="q-ops-before">Operators / shift <span class="roi-tooltip" data-tip="How many operators run this process per shift today?">?</span></label>
+            <input class="roi-input" type="number" id="q-ops-before" value="4" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="q-cost-hr">Operator cost / hour (₹) <span class="roi-tooltip" data-tip="Fully loaded cost including benefits, insurance, etc.">?</span></label>
+            <input class="roi-input" type="number" id="q-cost-hr" value="180" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="q-hrs-day">Working hours / day</label>
+            <input class="roi-input" type="number" id="q-hrs-day" value="16" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="q-days-year">Working days / year</label>
+            <input class="roi-input" type="number" id="q-days-year" value="300" min="0">
+          </div>
+        </div>
+
+        <!-- Automation -->
+        <h3 class="roi-section-header">Automation</h3>
+        <div class="roi-form-grid">
+          <div class="roi-field">
+            <label class="roi-label" for="q-ops-after">Operators after automation <span class="roi-tooltip" data-tip="How many operators will still be needed after automation?">?</span></label>
+            <input class="roi-input" type="number" id="q-ops-after" value="1" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="q-investment">Automation investment (₹) <span class="roi-tooltip" data-tip="Total capital cost of the automation system.">?</span></label>
+            <input class="roi-input" type="number" id="q-investment" value="2000000" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="q-contribution">Additional annual contribution (₹) <span class="roi-tooltip" data-tip="Any extra revenue or savings generated by automation beyond labour.">?</span></label>
+            <input class="roi-input" type="number" id="q-contribution" value="0" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="q-op-cost">Annual operating cost (₹) <span class="roi-tooltip" data-tip="Maintenance, power, consumables, etc. per year.">?</span></label>
+            <input class="roi-input" type="number" id="q-op-cost" value="90000" min="0">
+          </div>
+        </div>
+
+        <div class="roi-actions">
+          <button class="roi-btn roi-btn--primary" id="roi-calc-quick">Calculate Quick ROI</button>
+          <button class="roi-btn roi-btn--ghost" id="roi-change-quick">← Change analysis</button>
+        </div>
+      </div>
+
+      <div class="roi-card__right">
+        <h3 class="roi-result-title">Quick Result</h3>
+        <div class="roi-result-row">
+          <span class="roi-result-label">Annual labour saving</span>
+          <span class="roi-result-value" id="qr-labour-saving">₹0</span>
+        </div>
+        <div class="roi-result-row">
+          <span class="roi-result-label">Annual net benefit</span>
+          <span class="roi-result-value roi-result-value--hero" id="qr-net-benefit">₹0</span>
+        </div>
+        <div class="roi-result-row">
+          <span class="roi-result-label">Simple payback</span>
+          <span class="roi-result-value" id="qr-payback">—</span>
+        </div>
+        <div class="roi-result-row">
+          <span class="roi-result-label">5-year net value</span>
+          <span class="roi-result-value roi-result-value--accent" id="qr-5yr-net">₹0</span>
+        </div>
+
+        <h3 class="roi-section-header" style="margin-top:32px">What this means</h3>
+        <div class="roi-result-note">
+          <p id="qr-note">Enter your assumptions and calculate.</p>
+        </div>
+
+        <button class="roi-btn roi-btn--explore" id="roi-explore-invest">Explore Investment Analysis →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 3b — Investment Analysis ── -->
+  <div class="roi-step" id="roi-step-3b">
+    <div class="roi-card roi-card--split">
+      <div class="roi-card__left">
+        <p class="roi-step-label roi-step-label--left">Investment Analysis</p>
+        <div class="roi-progress roi-progress--left"><div class="roi-progress__fill" style="width:100%"></div></div>
+        <h2 class="roi-form-title">Detailed Investment Analysis</h2>
+        <p class="roi-form-desc">Model the operational and financial factors that affect an automation investment.</p>
+
+        <!-- Process & Productivity -->
+        <h3 class="roi-section-header">Process &amp; Productivity</h3>
+        <div class="roi-form-grid">
+          <div class="roi-field">
+            <label class="roi-label" for="i-investment">Automation investment (₹) <span class="roi-tooltip" data-tip="Total capital cost of the automation project.">?</span></label>
+            <input class="roi-input" type="number" id="i-investment" value="2000000" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-useful-life">Useful life (years)</label>
+            <input class="roi-input" type="number" id="i-useful-life" value="7" min="1">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-days-year">Working days / year <span class="roi-tooltip" data-tip="Number of production days per year.">?</span></label>
+            <input class="roi-input" type="number" id="i-days-year" value="300" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-shifts-day">Shifts / day</label>
+            <input class="roi-input" type="number" id="i-shifts-day" value="2" min="1">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-hrs-shift">Hours / shift</label>
+            <input class="roi-input" type="number" id="i-hrs-shift" value="8" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-cur-ops">Current operators / shift</label>
+            <input class="roi-input" type="number" id="i-cur-ops" value="4" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-auto-ops">Automated operators / shift</label>
+            <input class="roi-input" type="number" id="i-auto-ops" value="1" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-cost-hr">Operator cost / hour (₹) <span class="roi-tooltip" data-tip="Fully loaded cost per operator per hour.">?</span></label>
+            <input class="roi-input" type="number" id="i-cost-hr" value="180" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-cur-output">Current output / hour</label>
+            <input class="roi-input" type="number" id="i-cur-output" value="100" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-auto-output">Automated output / hour</label>
+            <input class="roi-input" type="number" id="i-auto-output" value="180" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-margin">Contribution margin / part (₹)</label>
+            <input class="roi-input" type="number" id="i-margin" value="15" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-cur-reject">Current rejection (%)</label>
+            <input class="roi-input" type="number" id="i-cur-reject" value="4" min="0" max="100" step="0.1">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-auto-reject">Automated rejection (%)</label>
+            <input class="roi-input" type="number" id="i-auto-reject" value="1.5" min="0" max="100" step="0.1">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-cur-downtime">Current downtime / month (hrs)</label>
+            <input class="roi-input" type="number" id="i-cur-downtime" value="8" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-auto-downtime">Automated downtime / month (hrs)</label>
+            <input class="roi-input" type="number" id="i-auto-downtime" value="3" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-downtime-value">Value lost / downtime hour (₹)</label>
+            <input class="roi-input" type="number" id="i-downtime-value" value="5000" min="0">
+          </div>
+        </div>
+
+        <!-- Escalation & Operating Costs -->
+        <h3 class="roi-section-header">Escalation &amp; Operating Costs</h3>
+        <div class="roi-form-grid">
+          <div class="roi-field">
+            <label class="roi-label" for="i-wage-esc">Annual wage escalation (%)</label>
+            <input class="roi-input" type="number" id="i-wage-esc" value="6" min="0" max="100" step="0.1">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-util-esc">Utilities escalation (%)</label>
+            <input class="roi-input" type="number" id="i-util-esc" value="5" min="0" max="100" step="0.1">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-maintenance">Maintenance / year (₹)</label>
+            <input class="roi-input" type="number" id="i-maintenance" value="60000" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-maint-esc">Maintenance escalation (%)</label>
+            <input class="roi-input" type="number" id="i-maint-esc" value="5" min="0" max="100" step="0.1">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-other-op">Other operating cost / year (₹)</label>
+            <input class="roi-input" type="number" id="i-other-op" value="0" min="0">
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-other-esc">Other cost escalation (%)</label>
+            <input class="roi-input" type="number" id="i-other-esc" value="5" min="0" max="100" step="0.1">
+          </div>
+        </div>
+
+        <!-- Financing -->
+        <h3 class="roi-section-header">Financing</h3>
+        <div class="roi-form-grid">
+          <div class="roi-field">
+            <label class="roi-label" for="i-fin-method">Financing method</label>
+            <select class="roi-select" id="i-fin-method">
+              <option value="bank-loan">Bank Loan</option>
+              <option value="self-funded">Self-funded</option>
+            </select>
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-down-payment">Down payment (₹)</label>
+            <input class="roi-input" type="number" id="i-down-payment" value="500000" min="0">
+          </div>
+          <div id="roi-fin-fields" class="roi-form-grid" style="grid-column:1/-1">
+            <div class="roi-field">
+              <label class="roi-label" for="i-loan-interest">Annual loan interest (%)</label>
+              <input class="roi-input" type="number" id="i-loan-interest" value="11" min="0" max="100" step="0.1">
+            </div>
+            <div class="roi-field">
+              <label class="roi-label" for="i-loan-tenure">Loan tenure (years)</label>
+              <input class="roi-input" type="number" id="i-loan-tenure" value="5" min="1">
+            </div>
+          </div>
+          <div class="roi-field">
+            <label class="roi-label" for="i-discount-rate">Discount rate (%)</label>
+            <input class="roi-input" type="number" id="i-discount-rate" value="10" min="0" max="100" step="0.1">
+          </div>
+        </div>
+
+        <div class="roi-actions">
+          <button class="roi-btn roi-btn--primary" id="roi-calc-invest">Calculate Investment Case</button>
+          <button class="roi-btn roi-btn--ghost" id="roi-change-invest">← Change analysis</button>
+        </div>
+      </div>
+
+      <div class="roi-card__right">
+        <h3 class="roi-result-title">Investment Snapshot</h3>
+        <div class="roi-result-row">
+          <span class="roi-result-label">Year 1 annual net benefit</span>
+          <span class="roi-result-value roi-result-value--hero" id="ir-y1-benefit">₹0</span>
+        </div>
+        <div class="roi-result-row">
+          <span class="roi-result-label">Simple payback</span>
+          <span class="roi-result-value" id="ir-payback">—</span>
+        </div>
+        <div class="roi-result-row">
+          <span class="roi-result-label">Loan EMI / month</span>
+          <span class="roi-result-value roi-result-value--accent" id="ir-emi">₹0</span>
+        </div>
+        <div class="roi-result-row">
+          <span class="roi-result-label">Total loan interest</span>
+          <span class="roi-result-value" id="ir-loan-interest">₹0</span>
+        </div>
+        <div class="roi-result-row">
+          <span class="roi-result-label">NPV</span>
+          <span class="roi-result-value roi-result-value--accent" id="ir-npv">₹0</span>
+        </div>
+        <div class="roi-result-row">
+          <span class="roi-result-label">IRR</span>
+          <span class="roi-result-value" id="ir-irr">—</span>
+        </div>
+
+        <h3 class="roi-section-header" style="margin-top:32px">Year 1 Benefit Mix</h3>
+        <div class="roi-result-note">
+          <p>This is a planning model, not financial advice. Actual tax, depreciation, GST, loan fees, working capital and accounting treatment may change the result.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /roi-wizard -->
+
+</main>
+
+<section class="contact-strip grain" id="talk">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's talk shop.</h2>
+    <p>WhatsApp or email — no forms.</p>
+    
+    <div class="cta-grid">
+      <a class="cta-card cta-card--solid" href="https://wa.me/919789991992" target="_blank" rel="noopener">
+        <span class="cta-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </span>
+        <span class="cta-copy"><strong>WhatsApp</strong><small>+91 97899 91992</small></span>
+      </a>
+      <a class="cta-card" href="mailto:sales@aettram.ind.in">
+        <span class="cta-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 7 9-7"/></svg>
+        </span>
+        <span class="cta-copy"><strong>Email</strong><small>sales@aettram.ind.in</small></span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo logo-footer" href="../index.html"><img src="../assets/images/aettram-logo.svg" alt="Aettram" class="logo-svg"></a>
+      <p style="margin-top:16px; color: var(--steel);">We design and manufacture in our own facility — CNC, sheet metal, and automation under one roof.</p>
+    </div>
+    <div>
+      <h4>Solutions</h4>
+      <a href="../services/automation-spm.html">Automation &amp; SPM</a>
+      <a href="../services/machine-tending.html">Feeding &amp; Conveying</a>
+      <a href="../manufacturing.html">Manufacturing Services</a>
+      <a href="../services/engineering-design.html">Engineering &amp; Design</a>
+      <a href="../services.html">All solutions</a>
+    </div>
+    <div>
+      <h4>Manufacturing</h4>
+      <p class="footer-subhead">CNC Machining</p>
+      <a href="../services/cnc-milling.html">CNC Milling</a>
+      <a href="../services/cnc-turning.html">CNC Turning</a>
+      <a href="../services/cnc-routing.html">CNC Routing</a>
+      <a href="../services/swiss-machining.html">Swiss Machining</a>
+      <a href="../services/micro-machining.html">Micro Machining</a>
+      <p class="footer-subhead">Sheet Metal</p>
+      <a href="../services/sheet-metal-fabrication.html">Fabrication</a>
+      <a href="../services/sheet-cutting.html">Sheet Cutting</a>
+      <a href="../services/laser-cutting.html">Laser Cutting</a>
+      <a href="../services/waterjet-cutting.html">Waterjet Cutting</a>
+      <a href="../services/laser-tube-cutting.html">Laser Tube Cutting</a>
+      <a href="../services/tube-bending.html">Tube Bending</a>
+      <a href="../manufacturing.html">All manufacturing</a>
+    </div>
+    <div>
+      <h4>Industries</h4>
+      <a href="../industries/automotive.html">Automotive &amp; Auto Components</a>
+      <a href="../industries/aerospace.html">Aerospace &amp; Defence</a>
+      <a href="../industries/medical-devices.html">Pharma &amp; Medical</a>
+      <a href="../industries/electronics.html">Electrical &amp; Electronics</a>
+      <a href="../industries/industrial-machinery.html">Industrial Machinery</a>
+      <a href="../industries/pumps-motors.html">Pumps &amp; Motors</a>
+      <a href="../industries/food-beverage.html">Food &amp; Beverage</a>
+      <a href="../industries/plastics-rubber.html">Plastics &amp; Rubber</a>
+      <a href="../industries/agriculture-off-highway.html">Agriculture &amp; Off-Highway</a>
+      <a href="../industries/consumer-products.html">Consumer Products</a>
+      <a href="../industries.html">All industries</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="../about.html">About / Facility</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../resources/roi-calculator.html">ROI Calculator</a>
+      <a href="../contact.html">Contact</a>
+      <a href="mailto:sales@aettram.ind.in">sales@aettram.ind.in</a>
+      <a href="https://wa.me/919789991992" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Aettram. All rights reserved.</p>
+    <p>Precision manufacturing · India</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js" defer></script>
+<script src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js" defer></script>
+
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/roi-calculator.js" defer></script>
+</body>
+</html>

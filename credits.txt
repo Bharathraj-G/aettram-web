@@ -1,0 +1,29 @@
+Image & video credits (free commercial use)
+Unsplash (unsplash.com/license):
+- photo-1565043666747-69f6646db940 CNC close-up
+- photo-1504917595217-d4dc5ebe6122 Factory dark
+- photo-1504328345606-18bbc8c9d7d1 Sparks / metalwork
+- photo-1537462715879-360eeb61a0ad Factory interior
+- photo-1581094794329-c8112a89af12 Factory floor
+- photo-1581091226825-a6a2a5aee158 CAD / engineer
+- photo-1581092918056-0c4c3acd3789 Safety gear
+- photo-1581092160562-40aa08e78837 Metrology / plant
+- photo-1485827404703-89b55fcc595e Robot arm
+- photo-1610557892470-55d9e80c0bce Machined parts
+- photo-1558618666-fcd25c85cd64 Sheet metal / pipes
+- photo-1518770660439-4636190af475 Electronics
+- photo-1486262715619-67b85e0b08d3 Automotive
+- photo-1576091160399-112ba8d25d1d Medical
+- photo-1473341304170-971dccb5ac1e Energy
+- photo-1513828583688-c52646db42da Energy plant
+- photo-1550751827-4bd374c3f58b Electronics 2
+- photo-1752614671119-4868a91efc14 Robot on metal
+- photo-1752614671144-7eee784abf74 Robot weld
+- photo-1581092160607-ee22621dd758 Aluminum parts
+- photo-1581092795360-fd1ca04f0952 Assembly
+Pexels:
+- 159298 gears, 46148 aircraft, 1108101 CNC, 162553 workshop
+- 257736 laser/industrial, 2760241 components, 3862379 waterjet
+- 3862130 press, 2599244 robotics, 3846508 machinery
+- 2280571 lab, 1267338 assembly, 236705 tube, 3861969 bracket
+Video: existing Aettram hero clip Metal_bar_cut_by_laser (assets/video/hero-laser.mp4)

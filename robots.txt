@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aettram.ind.in/sitemap.xml
