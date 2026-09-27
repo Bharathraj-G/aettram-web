@@ -323,13 +323,14 @@ p {
   justify-content: center;
   color: var(--charcoal);
   z-index: 2;
-  height: 30px;
+  height: 36px;
 }
 
 .logo-svg {
   display: block;
   height: 36px;
   width: auto;
+  object-fit: contain;
 }
 
 .logo-mark {
