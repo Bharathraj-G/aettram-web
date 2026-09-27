@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guides & Checklists — Aettram</title>
+<title>Engineering Guides — Aettram</title>
 <meta name="description" content="Standard operating procedures and procurement checklists for automation, CNC, and cell handover.">
 <link rel="canonical" href="https://aettram.ind.in/resources/guides.html">
-<meta property="og:title" content="Guides & Checklists — Aettram">
+<meta property="og:title" content="Engineering Guides — Aettram">
 <meta property="og:description" content="Standard operating procedures and procurement checklists for automation, CNC, and cell handover.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aettram.ind.in/resources/guides.html">
@@ -36,14 +36,6 @@
     <nav class="nav-links" aria-label="Primary">
       <a class="nav-link" href="../about.html">About</a>
       <a class="nav-link" href="../services.html">Solutions</a>
-      <div class="dropdown">
-        <a class="nav-link" href="../manufacturing.html">Manufacturing <svg class="nav-caret" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2.2 4.2L6 8l3.8-3.8" fill="none" stroke="#D8D6D2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <div class="dropdown-menu align-end" role="menu"><a href="../services/cnc-turning.html">CNC Turning</a><a href="../services/cnc-milling.html">CNC Milling / VMC</a><a href="../services/dro-machining.html">DRO Machining</a><a href="../services/conventional-lathe.html">Conventional Lathe Job Work</a><a href="../services/drilling-tapping-boring.html">Drilling / Tapping / Boring</a><a href="../services/jigs-fixtures.html">Jigs &amp; Fixtures</a><a href="../services/prototype-components.html">Prototype Components</a><a href="../services/small-batch-production.html">Small Batch Production</a><a href="../services/repeat-production.html">Repeat Production</a><a href="../services/machine-components.html">Machine Components</a><a href="../services/machine-frames.html">Machine Frames</a><a href="../services/fabricated-components.html">Fabricated Components</a><a href="../services/sub-assemblies.html">Sub-Assemblies</a><a href="../services/machine-assembly.html">Machine Assembly</a><a href="../services/fixture-structure-fabrication.html">Fixture &amp; Structure Fabrication</a></div>
-      </div>
-      <div class="dropdown">
-        <a class="nav-link" href="../industries.html">Industries <svg class="nav-caret" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2.2 4.2L6 8l3.8-3.8" fill="none" stroke="#D8D6D2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <div class="dropdown-menu align-end" role="menu"><a href="../industries/automotive.html">Automotive &amp; Auto Components</a><a href="../industries/aerospace.html">Aerospace &amp; Defence</a><a href="../industries/medical-devices.html">Pharma &amp; Medical</a><a href="../industries/electronics.html">Electrical &amp; Electronics</a><a href="../industries/industrial-machinery.html">Industrial Machinery</a><a href="../industries/pumps-motors.html">Pumps &amp; Motors</a><a href="../industries/food-beverage.html">Food &amp; Beverage</a><a href="../industries/plastics-rubber.html">Plastics &amp; Rubber</a><a href="../industries/agriculture-off-highway.html">Agriculture &amp; Off-Highway</a><a href="../industries/consumer-products.html">Consumer Products</a></div>
-      </div>
       <a class="nav-link is-active" href="../resources.html">Resources</a>
       <a class="nav-link" href="../contact.html">Contact</a>
     </nav>
@@ -53,8 +45,6 @@
 <nav class="mobile-panel" aria-label="Mobile">
   <a href="../about.html">About</a>
   <a href="../services.html">Solutions</a>
-  <a href="../manufacturing.html">Manufacturing</a>
-  <a href="../industries.html">Industries</a>
   <a href="../resources.html">Resources</a>
   <a href="../contact.html">Contact</a>
 </nav>
@@ -64,63 +54,112 @@
 <header class="page-hero grain">
   <div class="container">
     <p class="eyebrow">Insights &amp; Tools</p>
-    <h1 data-aos="fade-up">Guides &amp; Checklists</h1>
-    <p class="lead" data-aos="fade-up" data-aos-delay="80">Standard operating procedures and procurement guides you can use before a quote, a buy-off, or a production start.</p>
+    <h1 data-aos="fade-up">Engineering Guides</h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="80">Practical write-ups you can use before a quote, a concept freeze, or a production start.</p>
   </div>
 </header>
 <section class="section section--light">
   <div class="container">
     <div class="resource-list">
-      <article class="card"><div class="card-body">
+      <article class="card" id="automation-rfq"><div class="card-body">
         <p class="eyebrow">Procurement</p>
-        <h3>RFQ checklist for automation</h3>
-        <p>Part family, takt, shift pattern, current labour, scrap, changeover, utilities, and floor envelope. If those are missing, the quote is a guess. Send CAD, sample parts, and the current work instruction with the enquiry.</p>
+        <h3>How to Prepare an Automation RFQ</h3>
+        <p>Part family, takt, shift pattern, current labour, scrap, changeover, utilities, and floor envelope. Send CAD, sample parts, and the current work instruction with the enquiry.</p>
       </div></article>
-      <article class="card"><div class="card-body">
-        <p class="eyebrow">Quality</p>
-        <h3>Incoming inspection for CNC lots</h3>
-        <p>Confirm material certs, first-article vs drawing, critical dimensions, and surface callouts before the lot hits assembly. Hold points belong on the traveler, not in email.</p>
+      <article class="card" id="bowl-vs-step"><div class="card-body">
+        <p class="eyebrow">Feeding</p>
+        <h3>Bowl Feeder vs Step Feeder</h3>
+        <p>Bowls win on rate and compact orientation. Step and flex feeders win on changeover and mixed parts. Choose on geometry, noise, and how often the SKU changes.</p>
       </div></article>
-      <article class="card"><div class="card-body">
-        <p class="eyebrow">Handover</p>
-        <h3>Cell buy-off SOP</h3>
-        <p>Dry cycle, cycle-time study, poke-yoke, spare-parts list, and operator training sign-off. We do not call a cell complete until production can run it without the designer standing next to it.</p>
+      <article class="card" id="spm-vs-robot"><div class="card-body">
+        <p class="eyebrow">Cells</p>
+        <h3>SPM vs Robotic Automation</h3>
+        <p>A special-purpose machine is faster when the process is frozen. A robot is faster when the family will grow. Price both against the same takt and quality gate.</p>
       </div></article>
-      <article class="card"><div class="card-body">
-        <p class="eyebrow">Safety</p>
-        <h3>Lockout for special-purpose machines</h3>
-        <p>Energy isolation, guarding interlocks, and restart after a jam. Document who can reset the cell and what must be verified before the next cycle.</p>
+      <article class="card" id="cycle-time"><div class="card-body">
+        <p class="eyebrow">Timing</p>
+        <h3>How to Estimate Automation Cycle Time</h3>
+        <p>Time load, process, inspect, unload, and recover. If the robot is fast and the fixture is slow, the cell is slow.</p>
+      </div></article>
+      <article class="card" id="dfm"><div class="card-body">
+        <p class="eyebrow">DFM</p>
+        <h3>Designing Components for Manufacturing</h3>
+        <p>Datums, clamp access, and tolerances that a machine can actually hold. Design the part around how it will be located, not how it looks in CAD.</p>
+      </div></article>
+      <article class="card" id="machine-builder"><div class="card-body">
+        <p class="eyebrow">Scope</p>
+        <h3>What Information Does a Machine Builder Need?</h3>
+        <p>Process video, rates, utilities, floor plan, quality spec, and who owns fixtures. Missing any of these turns the quote into a guess.</p>
+      </div></article>
+      <article class="card" id="manual-vs-auto"><div class="card-body">
+        <p class="eyebrow">Assembly</p>
+        <h3>Manual vs Automated Assembly</h3>
+        <p>Automate the repeatable, fatiguing, or quality-critical steps first. Leave the exceptions with an operator until the family is stable.</p>
+      </div></article>
+      <article class="card" id="evaluate-concept"><div class="card-body">
+        <p class="eyebrow">Concept</p>
+        <h3>How to Evaluate an Automation Concept</h3>
+        <p>Check cycle time, access, changeover, safety, and spare parts. A concept is only real when production can run it without the designer on the floor.</p>
       </div></article>
     </div>
   </div>
 </section>
 
-<section class="section section--graphite">
+<section class="section section--resources">
   <div class="container">
-    <p class="eyebrow">More resources</p>
-    <h2>Continue reading</h2>
-    <div class="resources-grid" style="margin-top:28px">
-      <a class="resources-mini" href="engineering-notes.html">
-        <h3>Engineering Notes</h3>
-        <p>Technical briefs and process documentation.</p>
-        <span class="link-arrow">Read notes →</span>
-      </a>
-      <a class="resources-mini" href="sustainability.html">
-        <h3>Sustainability</h3>
-        <p>Approaches to energy-efficient system design.</p>
-        <span class="link-arrow">Learn more →</span>
-      </a>
-      <a class="resources-mini" href="newsletter.html">
-        <h3>Newsletter</h3>
-        <p>Monthly updates on manufacturing tech.</p>
-        <span class="link-arrow">Subscribe →</span>
-      </a>
-      <a class="resources-mini" href="roi-calculator.html">
-        <h3>Automation ROI Calculator</h3>
-        <p>Quick estimate or full investment analysis with NPV and IRR.</p>
-        <span class="link-arrow">Launch calculator →</span>
-      </a>
+    <div class="section-head">
+      <p class="eyebrow">Insights &amp; Tools</p>
+      <h2>Engineering Resources</h2>
     </div>
+      <div class="resources-hub">
+      <article class="resources-panel">
+        <h3>Calculators</h3>
+        <ul class="resources-rows">
+        <li><a href="roi-calculator.html">Automation ROI Calculator <span aria-hidden="true">→</span></a></li>
+        <li><a href="calculators.html#cycle-time">Cycle Time Calculator <span aria-hidden="true">→</span></a></li>
+        <li><a href="calculators.html#conveyor-speed">Conveyor Speed Calculator <span aria-hidden="true">→</span></a></li>
+        <li><a href="calculators.html#feeder-rate">Feeder Rate Calculator <span aria-hidden="true">→</span></a></li>
+        </ul>
+        <a class="resources-panel-cta" href="calculators.html">Explore calculators <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="resources-panel">
+        <h3>Engineering Checklists</h3>
+        <ul class="resources-rows">
+        <li><a href="checklists.html#automation-feasibility">Automation Feasibility Checklist <span aria-hidden="true">→</span></a></li>
+        <li><a href="checklists.html#spm-rfq">SPM RFQ Checklist <span aria-hidden="true">→</span></a></li>
+        <li><a href="checklists.html#feeding-rfq">Feeding System RFQ Checklist <span aria-hidden="true">→</span></a></li>
+        <li><a href="checklists.html#cnc-rfq">CNC Machining RFQ Checklist <span aria-hidden="true">→</span></a></li>
+        <li><a href="checklists.html#machine-design-review">Machine Design Review Checklist <span aria-hidden="true">→</span></a></li>
+        </ul>
+        <a class="resources-panel-cta" href="checklists.html">View all checklists <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="resources-panel">
+        <h3>Engineering Guides</h3>
+        <ul class="resources-rows">
+        <li><a href="guides.html#automation-rfq">How to Prepare an Automation RFQ <span aria-hidden="true">→</span></a></li>
+        <li><a href="guides.html#bowl-vs-step">Bowl Feeder vs Step Feeder <span aria-hidden="true">→</span></a></li>
+        <li><a href="guides.html#spm-vs-robot">SPM vs Robotic Automation <span aria-hidden="true">→</span></a></li>
+        <li><a href="guides.html#cycle-time">How to Estimate Automation Cycle Time <span aria-hidden="true">→</span></a></li>
+        <li><a href="guides.html#dfm">Designing Components for Manufacturing <span aria-hidden="true">→</span></a></li>
+        <li><a href="guides.html#machine-builder">What Information Does a Machine Builder Need? <span aria-hidden="true">→</span></a></li>
+        <li><a href="guides.html#manual-vs-auto">Manual vs Automated Assembly <span aria-hidden="true">→</span></a></li>
+        <li><a href="guides.html#evaluate-concept">How to Evaluate an Automation Concept <span aria-hidden="true">→</span></a></li>
+        </ul>
+        <a class="resources-panel-cta" href="guides.html">View all guides <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="resources-panel">
+        <h3>Templates</h3>
+        <ul class="resources-rows">
+        <li><a href="templates.html#automation-requirement">Automation Requirement Template <span aria-hidden="true">→</span></a></li>
+        <li><a href="templates.html#spm-requirement">SPM Requirement Template <span aria-hidden="true">→</span></a></li>
+        <li><a href="templates.html#feeding-requirement">Feeding System Requirement Template <span aria-hidden="true">→</span></a></li>
+        <li><a href="templates.html#machining-rfq">Machining RFQ Template <span aria-hidden="true">→</span></a></li>
+        <li><a href="templates.html#engineering-design">Engineering Design Requirement Template <span aria-hidden="true">→</span></a></li>
+        <li><a href="templates.html#machine-design-review">Machine Design Review Template <span aria-hidden="true">→</span></a></li>
+        </ul>
+        <a class="resources-panel-cta" href="templates.html">View all templates <span aria-hidden="true">→</span></a>
+      </article>
+      </div>
   </div>
 </section>
 
@@ -128,7 +167,7 @@
 <section class="contact-strip grain" id="talk">
   <div class="container">
     <p class="eyebrow">Contact</p>
-    <h2>Let's talk shop.</h2>
+    <h2>Let's Discuss Your Requirement.</h2>
     <p>WhatsApp or email — no forms.</p>
     
     <div class="cta-grid">
@@ -153,7 +192,7 @@
   <div class="container footer-grid">
     <div>
       <a class="logo logo-footer" href="../index.html"><img src="../assets/images/aettram-logo.svg" alt="Aettram" class="logo-svg"></a>
-      <p style="margin-top:16px">From concept to production, we build practical solutions under one roof.</p>
+      <p>From concept to production, we build practical solutions under one roof.</p>
     </div>
     <div>
       <h4>Solutions</h4>
@@ -162,23 +201,6 @@
       <a href="../manufacturing.html">Manufacturing Services</a>
       <a href="../services/engineering-design.html">Engineering &amp; Design</a>
       <a href="../services.html">All solutions</a>
-    </div>
-    <div>
-      <h4>Manufacturing</h4>
-      <p class="footer-subhead">CNC Machining</p>
-      <a href="../services/cnc-milling.html">CNC Milling</a>
-      <a href="../services/cnc-turning.html">CNC Turning</a>
-      <a href="../services/cnc-routing.html">CNC Routing</a>
-      <a href="../services/swiss-machining.html">Swiss Machining</a>
-      <a href="../services/micro-machining.html">Micro Machining</a>
-      <p class="footer-subhead">Sheet Metal</p>
-      <a href="../services/sheet-metal-fabrication.html">Fabrication</a>
-      <a href="../services/sheet-cutting.html">Sheet Cutting</a>
-      <a href="../services/laser-cutting.html">Laser Cutting</a>
-      <a href="../services/waterjet-cutting.html">Waterjet Cutting</a>
-      <a href="../services/laser-tube-cutting.html">Laser Tube Cutting</a>
-      <a href="../services/tube-bending.html">Tube Bending</a>
-      <a href="../manufacturing.html">All manufacturing</a>
     </div>
     <div>
       <h4>Industries</h4>

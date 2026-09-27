@@ -134,11 +134,6 @@ def nav(depth, active=""):
         <a class="nav-link{act('services')}" href="{a}services.html">Services {CARET}</a>
         <div class="dropdown-menu wide" role="menu">{cols}</div>
       </div>
-      <a class="nav-link{act('mfg')}" href="{a}manufacturing.html">Manufacturing</a>
-      <div class="dropdown">
-        <a class="nav-link{act('industries')}" href="{a}industries.html">Industries {CARET}</a>
-        <div class="dropdown-menu align-end" role="menu">{ind}</div>
-      </div>
       <a class="nav-link{act('contact')}" href="{a}contact.html">Contact</a>
     </nav>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -148,8 +143,6 @@ def nav(depth, active=""):
   <a href="{a}index.html">Home</a>
   <a href="{a}about.html">About</a>
   <a href="{a}services.html">Services</a>
-  <a href="{a}manufacturing.html">Manufacturing</a>
-  <a href="{a}industries.html">Industries</a>
   <a href="{a}contact.html">Contact</a>
 </nav>
 """
@@ -179,7 +172,7 @@ def contact_strip(depth):
 <section class="contact-strip grain" id="talk">
   <div class="container">
     <p class="eyebrow">Contact</p>
-    <h2>Let's talk shop.</h2>
+    <h2>Let's Discuss Your Requirement.</h2>
     <p>WhatsApp or email — no forms.</p>
     {contact_ctas()}
   </div>
@@ -401,7 +394,7 @@ def about():
       <p>We built Aettram as a production company: programmers, machinists, fabricators, and automation engineers sharing the same tooling library. When a part moves from mill to brake to cell, it does not leave our custody.</p>
       <p>ISO-certified process sits over that floor — travelers, first-article, CMM, and surface records — so the work we ship is the work we measured.</p>
     </div>
-    <div class="frame"><img src="assets/images/facility/plant-aerial.webp" alt="Manufacturing plant interior" loading="lazy"></div>
+    <div class="frame"><img src="assets/images/facility/aettram-about.png" alt="Aettram Industrial Solutions" loading="lazy"></div>
   </div>
   <div class="container stats">
     <div><div class="stat-num" data-count="3">0</div><p>Core bays: CNC, sheet, automation</p></div>
@@ -580,12 +573,12 @@ SERVICES = [
          related=["cnc-turning.html", "micro-machining.html", "swiss-machining.html"]),
     dict(file="cnc-turning.html", title="CNC Turning", eyebrow="CNC · Turning",
          desc="Live-tool turning for shafts, bushings, and rotational parts we finish on our lathes.",
-         img="assets/images/services/turning.webp",
+         img="assets/images/services/cnc-turning.jpg",
          highlights=[("Live tooling", "Mill-turn features without a second chucking when the drawing allows."),
                      ("Bar and chuck", "Prototype singles and production bar-fed lots."),
                      ("Hard turning", "Finish after heat treat on selected grades."),
                      ("Thread control", "UN, metric, and custom pitches we verify with gauges.")],
-         gallery=["assets/images/services/turning.webp", "assets/images/services/cnc-machines.webp", "assets/images/products/aluminum.webp", "assets/images/products/gears.webp", "assets/images/hero/sparks.webp", "assets/images/team/safety-worker.webp"],
+         gallery=["assets/images/services/cnc-turning.jpg", "assets/images/services/cnc-machines.webp", "assets/images/products/aluminum.webp", "assets/images/products/gears.webp", "assets/images/hero/sparks.webp", "assets/images/team/safety-worker.webp"],
          spec=[("Typical tolerance", "±0.015 mm diameter"), ("Capacity", "Ø 320 mm × 500 mm between centers"), ("Materials", "Steels, stainless, brass, aluminum"), ("Machines", "Live-tool CNC lathes")],
          related=["cnc-milling.html", "swiss-machining.html", "cnc-routing.html"]),
     dict(file="cnc-routing.html", title="CNC Routing", eyebrow="CNC · Routing",
@@ -680,22 +673,22 @@ SERVICES = [
          related=["laser-tube-cutting.html", "sheet-metal-fabrication.html", "automation-spm.html"]),
     dict(file="automation-spm.html", title="Assembly Automation", eyebrow="Automation · Assembly",
          desc="Assembly cells we design, tool, and prove on our floor before they ship as Aettram systems.",
-         img="assets/images/services/assembly.webp",
+         img="assets/images/services/automation-spm.jpg",
          highlights=[("Cell architecture", "Stations we layout around our own cycle-time studies."),
                      ("Tooling", "EOAT and nests we mill and print."),
                      ("PLC / HMI", "Logic we write and keep."),
                      ("FAT", "Buy-off happens in our bay.")],
-         gallery=["assets/images/services/assembly.webp", "assets/images/services/robot-metal.webp", "assets/images/products/assembly-cell.webp", "assets/images/services/robot-arm.webp", "assets/images/industries/robotics.webp", "assets/images/facility/factory-interior.webp"],
+         gallery=["assets/images/services/automation-spm.jpg", "assets/images/services/robot-metal.webp", "assets/images/products/assembly-cell.webp", "assets/images/services/robot-arm.webp", "assets/images/industries/robotics.webp", "assets/images/facility/factory-interior.webp"],
          spec=[("Scope", "Single station to linked line"), ("Controls", "PLC, HMI, safety"), ("Mechanics", "Frames we fabricate"), ("Prove-out", "FAT at Aettram")],
          related=["robotic-assembly-testing.html", "machine-tending.html", "vision-inspection.html"]),
     dict(file="machine-tending.html", title="Machine Tending", eyebrow="Automation · Tending",
          desc="Robots that load our mills and lathes — cells we run every day, then replicate as product.",
-         img="assets/images/services/robot-arm.webp",
+         img="assets/images/services/feeding-conveying.jpg",
          highlights=[("Dual gripper", "Load/unload without starving the spindle."),
                      ("Drawer / conveyor", "Infeed we build to the machine."),
                      ("Probe handshake", "Robot waits on our CNC ready bits."),
                      ("Cage & safety", "Fencing and scanners we integrate.")],
-         gallery=["assets/images/services/robot-arm.webp", "assets/images/services/cnc-machines.webp", "assets/images/services/robot-metal.webp", "assets/images/hero/cnc-closeup.webp", "assets/images/team/safety-worker.webp", "assets/images/products/machined-parts.webp"],
+         gallery=["assets/images/services/feeding-conveying.jpg", "assets/images/services/cnc-machines.webp", "assets/images/services/robot-metal.webp", "assets/images/hero/cnc-closeup.webp", "assets/images/team/safety-worker.webp", "assets/images/products/machined-parts.webp"],
          spec=[("Robots", "6-axis tending cells"), ("Machines", "VMC and lathe tend"), ("Payload", "Sized to our chucks"), ("Software", "PLC + robot TP we own")],
          related=["automation-spm.html", "cnc-milling.html", "cnc-turning.html"]),
     dict(file="robotic-assembly-testing.html", title="Robotic Assembly & Testing", eyebrow="Automation · Robotics",
@@ -908,9 +901,9 @@ def favicon_svg():
     (ROOT / "favicon.svg").write_text(
         """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 <rect width="64" height="64" fill="#0F0F10"/>
-<rect x="6" y="6" width="52" height="52" fill="none" stroke="#C1440E" stroke-width="2"/>
-<path d="M8 8h10M8 8v10M56 8h-10M56 8v10M8 56h10M8 56v-10M56 56h-10M56 56v-10" stroke="#C1440E" stroke-width="2" fill="none"/>
-<text x="32" y="42" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="28" fill="#C1440E">A</text>
+<rect x="6" y="6" width="52" height="52" fill="none" stroke="#18A889" stroke-width="2"/>
+<path d="M8 8h10M8 8v10M56 8h-10M56 8v10M8 56h10M8 56v-10M56 56h-10M56 56v-10" stroke="#18A889" stroke-width="2" fill="none"/>
+<text x="32" y="42" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="28" fill="#18A889">A</text>
 </svg>""",
         encoding="utf-8",
     )
