@@ -572,6 +572,7 @@ body.menu-open .nav-toggle span:nth-child(3) {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 72% center;
 }
 
 .hero-overlay {
@@ -1556,6 +1557,7 @@ body.menu-open .nav-toggle span:nth-child(3) {
   }
   .grid-2,
   .grid-3,
+  .grid-4,
   .masonry,
   .related,
   .values,

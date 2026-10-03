@@ -288,9 +288,7 @@ def index():
 <main id="main">
 <section class="hero grain">
   <div class="hero-media" data-hero-media>
-    <video autoplay muted loop playsinline poster="assets/images/hero/cnc-closeup.webp">
-      <source src="assets/video/hero-laser.mp4" type="video/mp4">
-    </video>
+    <img src="assets/images/hero/aettram-hero.webp" alt="CNC machining with digital process overlay">
   </div>
   <div class="hero-overlay"></div>
   <div class="container">
