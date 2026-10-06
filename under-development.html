@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Under Development — Aettram</title>
+<meta name="description" content="This page is under development.">
+<link rel="canonical" href="https://aettram.ind.in/under-development.html">
+<meta property="og:title" content="Under Development — Aettram">
+<meta property="og:description" content="This page is under development.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aettram.ind.in/under-development.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="ud-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<main id="main" class="ud-page">
+  <div class="ud-inner">
+    <img class="ud-art" src="assets/images/under-development.jpg" alt="Website under construction illustration">
+    <h1 class="ud-title">This page <span>under development</span></h1>
+    <div class="ud-actions">
+      <a class="ud-btn ud-btn--outline" id="ud-back" href="index.html">Back</a>
+      <a class="ud-btn ud-btn--solid" href="index.html">Go to Home</a>
+    </div>
+  </div>
+</main>
+<script>
+  document.getElementById("ud-back").addEventListener("click", function (e) {
+    if (window.history.length > 1) {
+      e.preventDefault();
+      window.history.back();
+    }
+  });
+</script>
+</body>
+</html>
