@@ -10,6 +10,7 @@
   --line: rgba(24, 168, 137, 0.22);
   --line-gray: rgba(16, 24, 39, 0.1);
   --radius: 3px;
+  --btn-radius: 8px;
   --nav-h: 76px;
   --font-head: "Space Grotesk", system-ui, sans-serif;
   --font-body: Inter, system-ui, sans-serif;
@@ -235,7 +236,7 @@ p {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.02em;
-  border-radius: var(--radius);
+  border-radius: var(--btn-radius);
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -282,7 +283,7 @@ p {
 }
 
 .btn--pill {
-  border-radius: 999px;
+  border-radius: var(--btn-radius);
   background: var(--graphite);
   border-color: var(--line);
   cursor: pointer;
@@ -1198,7 +1199,7 @@ body.menu-open .nav-toggle span:nth-child(3) {
   border: 1px solid var(--orange);
   background: transparent;
   color: #fff;
-  border-radius: var(--radius);
+  border-radius: var(--btn-radius);
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -1658,7 +1659,7 @@ body.menu-open .nav-toggle span:nth-child(3) {
   min-width: 132px;
   min-height: 48px;
   padding: 0 28px;
-  border-radius: 10px;
+  border-radius: var(--btn-radius);
   font-family: var(--font-head);
   font-size: 16px;
   font-weight: 600;
