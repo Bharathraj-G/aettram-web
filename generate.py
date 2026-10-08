@@ -88,7 +88,7 @@ def head(depth, title, desc, path):
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canon}">
 <meta property="og:image" content="{og}">
-<link rel="icon" href="{a}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{a}favicon.png" type="image/png">
 <link rel="icon" href="{a}favicon.ico">
 <link rel="apple-touch-icon" href="{a}apple-touch-icon.png">
 {cdn()}
